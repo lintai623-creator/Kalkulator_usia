@@ -1,0 +1,37 @@
+import random
+import os
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+while True:   
+    nama = ["agus", "bagas", "udin", "lia", "sari", "bagus", "lani", "zaki", "iwan", "negro"]
+    
+    for xxx in nama:
+        print(f" --{xxx}")
+    
+    rahasia = random.choice(nama)
+    nyawa = 4
+    
+    print("\nTebak nama di atas yang Transgender😐")
+    
+    while nyawa > 0:
+        xx = input("\nTebak nama😏•>").lower()
+        if(xx == " "):
+            print("Isi bro😤")
+        
+        if(xx == rahasia):
+            print("\nBenar bro wkwkwkwk🤣")
+            break
+        else:
+            nyawa -= 1
+            print(f"\nNyawa sisa {nyawa}😂")
+            print("Salah bro yang🤪")
+            
+    if(nyawa == 0):
+        print("\nGame Over😹")
+        print(f"Jawabanya {rahasia}😜")
+        
+        input("\nEnter😇")
+        clear()
+
+    clear()
