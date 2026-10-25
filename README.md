@@ -1,2 +1,1 @@
-# Kalkulator_usia
-Kalkulator usia.py
+Tod.xxx
